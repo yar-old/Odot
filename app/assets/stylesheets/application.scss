@@ -37,3 +37,47 @@
   list-style: none;
   margin-right: 6px;
 }
+
+.clear {
+  clear: both;
+}
+
+.nav {
+  border-bottom: 1px solid #aaa;
+  margin-bottom: 20px;
+  padding: 10px 0 0 5px;
+
+  h1 {
+    float: left;
+    margin: 0 1em 0 0;
+  }
+
+  a {
+    text-decoration: none !important;
+  }
+
+  ul {
+    float: left;
+    list-style: none;
+    clear: right;
+    margin: 0 0 0 1em;
+    padding: 0;
+  }
+
+  ul li {
+    float: left;
+  }
+
+  ul li a {
+    display: block;
+    width: auto;
+    padding: 8px 10px 8px 10px;
+    background: #eee;
+    color: #aaa;
+  }
+
+  ul li a:hover {
+    background: #aaa;
+    color: #eee;
+  }
+}
