@@ -7,10 +7,10 @@ describe "Deleting todo lists" do
     visit "/todo_lists"
 
     within "#todo_list_#{todo_list.id}" do
-      click_link "Destroy"
+      click_link "Delete"
     end
 
-    expect(page).to have_content("Todo list was successfully destroyed.")
+    expect(page).to have_content("Todo list was deleted.")
     expect(page).to_not have_content(todo_list.title)
     expect(TodoList.count).to eq(0)
   end
